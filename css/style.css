@@ -1,0 +1,28 @@
+.navbar{
+    list-style: none;
+    align-items: center;
+
+
+}
+
+.links{
+    display: flex;
+    float: right;
+    padding-right: 10%;
+}
+
+.nav_item{
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav_item:hover{
+    color: red;
+}
+
+.logo{
+    padding-left: 8%;
+    float: left;
+}
