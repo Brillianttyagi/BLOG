@@ -7,3 +7,11 @@ function expandnav() {
         change.style.display = "block";
     }
 }
+$(window).on('resize', function(event){
+    var windowSize = $(window).width(); 
+    if(windowSize < 613){
+        $("#change").css('display', 'none');
+    } else {
+        $("#change").css('display', 'flex');
+    }
+});

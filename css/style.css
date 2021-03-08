@@ -30,7 +30,7 @@
 .links{
     float: right;
     padding-right: 10%;
-    transition: top 0.3s;
+    transition: all 2s linear;
 }
 
 .nav_item{
