@@ -4,21 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brilliant programmer</title>
     <link rel="stylesheet" href="css/style.css">
-    <script>
-
-        // JavaScript goes here
-  
-        function expandnav() {
-            var change = document.getElementById("change");
-            if (change.style.display === "none"){
-                change.style.display = "block";
-            }
-            else{
-                change.style.display = "none";
-            }
-        }
-  
-      </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -38,7 +25,16 @@
             <a class="nav_item"><li class="link">About Us</li></a>
         </div>
     </nav>
-    
+    <script>
+        $(window).on('resize', function(event){
+            var windowSize = $(window).width(); 
+            if(windowSize < 613){
+                $("#change").css('display', 'none');
+            } else {
+                $("#change").css('display', 'flex');
+            }
+        });
+    </script>
 
 </body>
 
