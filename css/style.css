@@ -15,13 +15,22 @@
 }
 
 .nav_btn{
-    
+    background-color: rgba(255, 166, 0, 0.671);
+    outline: none;
+    border: none;
+    float: right;
+    margin: 10px;
+    width: 40px;
+    height: 43px;
+    border-radius: 5px;
 }
-
+.nav_btn:active{
+    box-shadow: 1px 1px 4px black;
+}
 .links{
-    display: flex;
     float: right;
     padding-right: 10%;
+    transition: top 0.3s;
 }
 
 .nav_item{
@@ -99,8 +108,11 @@
 
 @media screen and (max-width: 613px) {
     .links{
-        display: block;
         width: 100%;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px black;
+        margin-top: -5px;
+        display: none;
 
     }
     .dropdown{
@@ -118,4 +130,16 @@
         cursor: pointer;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+
   }
+@media screen and (min-width: 613px) {
+    .nav_btn{
+        display: none;
+    }
+    #change{
+        display: flex;
+    }
+
+  }
+
+  
