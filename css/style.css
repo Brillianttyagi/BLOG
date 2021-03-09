@@ -31,8 +31,6 @@
     float: right;
     padding-right: 10%;
     transition: all 2s linear;
-    position: sticky
-    z-index: 2;
 }
 
 .nav_item{
@@ -106,11 +104,10 @@
 
 
 .email_box{
-    width: 70%;
-    height: 400px;
+    margin: 0 auto;
+    width: 50%;
+    padding: 5px;
     background-color: rgba(180, 147, 147, 0.301);
-    margin-right: 15%;
-    margin-left: 15%;
     margin-top: 30px;
     border-radius: 40px;
     box-sizing: border-box;
@@ -119,7 +116,7 @@
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    padding: 50px;
+    padding: 10px;
 }
 #email_name{
     outline: none;
@@ -140,6 +137,7 @@
     justify-content: center;  
     align-items: center;
     flex-direction: column;
+
 }
 #email_submit{
     line-height: 0px;
@@ -150,12 +148,15 @@
     outline: none;
     border: none;
     text-align: center;
-    font-size: 18px;
+    font-size: 95%;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
     background-color: red;
     box-shadow: 1px 1px 3px rgb(60, 62, 63);
+    cursor: pointer;
+    margin-bottom: 20px;
+    
     
 }
 #email_submit:hover{
@@ -222,7 +223,9 @@
         transition: all 0.5s ease-in-out;
 
     }
-
+    .email_box{
+        width: 60%;
+    }
     #email_name{
         width: 80%;
     }
