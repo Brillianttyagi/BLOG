@@ -34,9 +34,11 @@
 }
 
 .nav_item{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
     color: black;
     text-align: center;
-    padding: 17px 16px;
+    padding: 17px 18px;
     text-decoration: none;
     font-size: 17px;
     font-weight: 550;
@@ -46,6 +48,8 @@
 }
 .nav_item:hover{
     color: red;
+    border-bottom: 2px solid orangered;
+    border-radius: 5px;
 }
 
 .logo{
@@ -73,23 +77,28 @@
   }
 .dropdown{
     border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
     background-color: white;
     margin-top: -3px;
     text-align: center;
     color: black;
     text-align: center;
-    padding: 17px 16px;
+    padding: 17px 18px;
     text-decoration: none;
     font-size: 17px;
     font-weight: 550;
     vertical-align: baseline;
     cursor: pointer;
     outline: none;
+    float: right;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .dropdown:hover{
     border: none;
     color: red;
+    border-bottom: 2px solid orangered;
+    border-radius: 5px;
 }
 .topics_dropdown a:hover {background-color: #ddd;    color: red;}
 .dropdown:hover + .topics_dropdown  {
@@ -106,7 +115,7 @@
 
 
 
-@media screen and (max-width: 613px) {
+@media screen and (max-width: 640px) {
     .links{
         width: 100%;
         background-color: white;
@@ -132,7 +141,7 @@
     }
 
   }
-@media screen and (min-width: 613px) {
+@media screen and (min-width: 640px) {
     .nav_btn{
         display: none;
     }

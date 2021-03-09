@@ -9,7 +9,7 @@ function expandnav() {
 }
 $(window).on('resize', function(event){
     var windowSize = $(window).width(); 
-    if(windowSize < 613){
+    if(windowSize < 640){
         $("#change").css('display', 'none');
     } else {
         $("#change").css('display', 'flex');
