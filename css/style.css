@@ -34,8 +34,6 @@
 }
 
 .nav_item{
-    border-bottom: 2px solid rgb(255, 255, 255);
-    border-radius: 5px;
     color: black;
     text-align: center;
     padding: 17px 18px;
@@ -48,8 +46,6 @@
 }
 .nav_item:hover{
     color: red;
-    border-bottom: 2px solid orangered;
-    border-radius: 5px;
 }
 
 .logo{
@@ -77,10 +73,7 @@
   }
 .dropdown{
     border: none;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    border-radius: 5px;
     background-color: white;
-    margin-top: -3px;
     text-align: center;
     color: black;
     text-align: center;
@@ -97,8 +90,6 @@
 .dropdown:hover{
     border: none;
     color: red;
-    border-bottom: 2px solid orangered;
-    border-radius: 5px;
 }
 .topics_dropdown a:hover {background-color: #ddd;    color: red;}
 .dropdown:hover + .topics_dropdown  {
@@ -122,10 +113,8 @@
         box-shadow: 0 8px 6px -6px black;
         margin-top: -5px;
         display: none;
+        
 
-    }
-    .dropdown{
-        display: none;
     }
     .nav_item{
         color: black;
@@ -139,6 +128,25 @@
         cursor: pointer;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+    .dropdown{
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 16px;
+        margin: 0px;
+    }
+    .link{
+        width: 100%;
+        margin: 0px;
+
+    }
+
+    #change{
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+
+    }
 
   }
 @media screen and (min-width: 640px) {
@@ -147,6 +155,7 @@
     }
     #change{
         display: flex;
+        transition: all 0s ease-in-out;
     }
 
   }

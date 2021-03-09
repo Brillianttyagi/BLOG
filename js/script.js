@@ -1,16 +1,17 @@
 function expandnav() {
     var change = document.getElementById("change");
-    if (change.style.display === "block"){
-        change.style.display = "none";
+    if (change.style.height === "200px"){
+        change.style.height = "0";
     }
     else{
-        change.style.display = "block";
+        change.style.height = "200px";
     }
 }
 $(window).on('resize', function(event){
     var windowSize = $(window).width(); 
     if(windowSize < 640){
-        $("#change").css('display', 'none');
+        $("#change").css('display', 'block');
+        $("#change").css('height', '0px');
     } else {
         $("#change").css('display', 'flex');
     }
