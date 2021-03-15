@@ -215,7 +215,7 @@
 
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
     .links{
         width: 100%;
         background-color: white;
@@ -266,7 +266,7 @@
         width: 65%;
     }
   }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 680px) {
     .nav_btn{
         display: none;
     }

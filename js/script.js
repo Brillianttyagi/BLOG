@@ -9,7 +9,7 @@ function expandnav() {
 }
 $(window).on('resize', function(event){
     var windowSize = $(window).width(); 
-    if(windowSize < 640){
+    if(windowSize < 660){
         $("#change").css('display', 'block');
         $("#change").css('height', '0px');
     } else {
