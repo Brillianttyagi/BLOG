@@ -175,7 +175,7 @@
 }
 
 .blog_container{
-    margin: 40px 80px;
+    margin: 40px 60px;
     box-sizing: border-box;
 }
 
@@ -185,17 +185,15 @@
     padding: 20px;
 }
 
-.blog_items{
-    display: flex;
-    flex-direction: row;
-}
 .blog_item{
     margin: 20px;
     background-color: gray;
-    width: 30%;
+    width: 29%;
     height: 230px;
+    float: left;
 }
 footer{
+    clear: both;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 10px gray;
     height: 300px;
@@ -252,6 +250,13 @@ footer{
         margin: 0px;
 
     }
+    .blog_item{
+        margin: 17px;
+        background-color: gray;
+        width: 90%;
+        height: 230px;
+        float: left;
+    }
 
     #change{
         display: block;
@@ -270,6 +275,9 @@ footer{
         width: 65%;
     }
   }
+
+
+
 @media screen and (min-width: 680px) {
     .nav_btn{
         display: none;
