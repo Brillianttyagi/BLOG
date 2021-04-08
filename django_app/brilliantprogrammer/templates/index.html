@@ -1,33 +1,6 @@
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brilliant programmer</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="{% static 'js/script.js' %}"></script>
-</head>
-<body>
-    <nav class="navbar">
-        <a class="nav_item_logo"><li class="logo"><img width="60px" src="https://avatars.githubusercontent.com/u/48671623?s=460&u=ffecc55ad8ea649d79a325d5aa8b300900bbfbd2&v=4"/></li></a>
-        <button class="nav_btn" onclick="expandnav()"><img width="30px" src="images/line.png"></button>
-        <div id="change" class="links">
-            <a class="nav_item"><li class="link">Home</li></a>
-            <button class="dropdown"><li class="link" >Topics</li></button>
-            <div class="topics_dropdown">
-                <a href="#">Machine learning</a>
-                <a href="#">Python</a>
-                <a href="#">Javascript</a>
-                <a href="#">Web development</a>
-                <a href="#">Others</a>
-            </div>
-            <a class="nav_item"><li class="link">Contact Us</li></a>
-            <a class="nav_item"><li class="link">About Us</li></a>
-        </div>
-    </nav>
-
-
+{% extends "nav.html" %}
+{% block body %}
+    {{ block.super }}
     <div class="email_box">
         <h1 class="email_text">Get blog post right into your inbox</h1>
         <div class="email_container">
@@ -68,6 +41,4 @@
             
         </div>
     </footer>
-</body>
-
-</html>
+{% endblock %}
