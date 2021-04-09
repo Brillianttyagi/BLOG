@@ -10,4 +10,4 @@ def contact(request):
 
 
 def about(request):
-    return render(request,'login.html')
+    return render(request,'aboutus.html')

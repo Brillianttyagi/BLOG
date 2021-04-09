@@ -1,0 +1,36 @@
+{% extends "nav.html" %}
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+{% endblock %}
+{% block body %}
+    {{ block.super }}
+    <div class="about_block">
+        <h1>ABOUT US</h1>
+        <img src="https://avatars.githubusercontent.com/u/48671623?s=460&u=ffecc55ad8ea649d79a325d5aa8b300900bbfbd2&v=4" width="100px" >
+        <div class="contant">
+            <h1>Hello World, I am Deepanshu tyagi and i am a technocrat.
+
+                <br>I am writing post as a single mission to share my knowledge around the globe.</h1>
+
+        </div>
+
+        
+    </div>
+    <div class="quotes">
+        <h1>"Technology has the power to change the world."</h1>
+    </div>
+    <div class="info">
+        <div class="block">
+            <h1>PROGRAMMING</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrX96lSqz1G7hVyG-RBdDyldtHnXoc8mZqfw&usqp=CAU" >
+            <div class="contant">
+                <h1><i>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” <br> – Martin Fowler</i></h1>
+    
+            </div>
+    
+            
+        </div>
+    </div>
+{% endblock %}
