@@ -1,6 +1,41 @@
 .Login_box{
-  margin: 0 auto;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    box-shadow: 1px 1px 10px grey;
 }
+.login{
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+.login h1{    
+    font-size: 40px;
+    border-bottom: 6px orangered solid;
+    margin-bottom: 60px;
+    padding: 30px 0;
+}
+.userentry {
+    width: 100%;
+    overflow: hidden;
+    font-size: 18px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px orangered solid;
+}
+.userentry input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+}
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
 .button {
   min-width: 60px;
   min-height: 60px;

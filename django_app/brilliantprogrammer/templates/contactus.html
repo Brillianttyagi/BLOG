@@ -1,5 +1,19 @@
 {% extends "nav.html" %}
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/contactus.css' %}">
+{% endblock %}
 {% block body %}
     {{ block.super }}
-    
+    <div class="contact_block">
+        <h1>CONTACT US</h1>
+        <div class="input_box">
+            <input type="text" placeholder="Name" id="name" name="sname" ><br>
+            <input type="text" id="email" placeholder="Email" name="semail"><br>
+            <input type="textarea" id="textarea" placeholder="Go ahead! We are listening..." name="stextarea"><br>
+            <button class="submit_btn">SUBMIT</button>    
+        </div>
+        
+    </div>
 {% endblock %}

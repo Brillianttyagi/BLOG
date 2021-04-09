@@ -1,14 +1,21 @@
+{% extends "nav.html" %}
+{% load static %}
+{% block head %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+{% block body %}
+    <div className="Login_box">
+        <div className="login">
+            <h1>Login</h1>
+            <div className="userentry">
+                <span>👥</span><input id="Username" placeholder="Username" onChange={this.onChange} value={} name="Username" type="text"/>
+            </div>
+            <div className="userentry">
+                <span>🔑</span><input id="Password" placeholder="Password" onChange={this.onChange} name="Password" type="password"/>
+            </div>
+            <button onClick=submit() class="button">Login</button>
 
-<div className="Login_box">
-    <div className="login">
-        <h1>Login</h1>
-        <div className="userentry">
-            <span>👥</span><input id="Username" placeholder="Username" onChange={this.onChange} value={} name="Username" type="text"/>
         </div>
-        <div className="userentry">
-            <span>🔑</span><input id="Password" placeholder="Password" onChange={this.onChange} name="Password" type="password"/>
-        </div>
-        <button onClick={this.onSubmit} class="button">Login</button>
-
     </div>
-</div>
+{% endblock %}

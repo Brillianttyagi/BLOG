@@ -7,3 +7,7 @@ def index(request):
 
 def contact(request):
     return render(request,'contactus.html')
+
+
+def about(request):
+    return render(request,'login.html')
