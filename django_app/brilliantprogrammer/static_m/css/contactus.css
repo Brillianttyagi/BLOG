@@ -1,0 +1,70 @@
+.contact_block{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+.contact_block h1{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+}
+.input_box{
+    margin-top: 30px;
+}
+
+#name{
+    outline: none;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px;
+    width: 60%;
+    margin: 8px;
+}
+#email{
+    outline: none;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px;
+    width: 60%;
+    margin: 8px;
+}
+#textarea{
+    outline: none;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px;
+    width: 60%;
+    margin: 8px;
+    height: 70px;
+}
+.submit_btn{
+    outline: none;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px;
+    width: 60%;
+    margin: 8px;
+    font-weight: 700;
+    border: none;
+    background-color: rgba(0, 128, 0, 0.705);
+    color: white;
+}
+.submit_btn:active{
+    background-color: rgba(0, 128, 0, 0.795);
+}
+@media screen and (max-width: 680px){
+    #name{
+        width: 100%;
+    }
+
+    #email{
+        width: 100%;
+    }
+    #textarea{
+        width: 100%;
+    }
+    .submit_btn{
+        width: 100%;
+    }
+}
