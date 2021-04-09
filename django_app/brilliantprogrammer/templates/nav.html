@@ -14,7 +14,7 @@
     {% block body %}
     <nav class="navbar">
         <a class="nav_item_logo"><li class="logo"><img width="60px" src="https://avatars.githubusercontent.com/u/48671623?s=460&u=ffecc55ad8ea649d79a325d5aa8b300900bbfbd2&v=4"/></li></a>
-        <button class="nav_btn" onclick="expandnav()"><img width="30px" src="images/line.png"></button>
+        <button class="nav_btn" onclick="expandnav()"><img width="30px" src="{% static 'images/line.png' %"></button>
         <div id="change" class="links">
             <a href="/" class="nav_item"><li class="link">Home</li></a>
             <button class="dropdown"><li class="link" >Topics</li></button>
