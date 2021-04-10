@@ -1,0 +1,19 @@
+footer{
+    height: 150px;
+    background-color: rgb(22, 168, 34);
+
+}
+.footer_block{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.social{
+    height: 80px;
+}
+.copyright{
+
+    font-size: 9px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
