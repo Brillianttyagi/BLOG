@@ -1,6 +1,12 @@
 footer{
-    height: 150px;
+    height: 160px;
     background-color: rgb(22, 168, 34);
+    position: relative;
+
+    text-align: center;
+    
+    bottom: -80px;
+    width: 100%;
 
 }
 .footer_block{
@@ -10,10 +16,15 @@ footer{
 }
 .social{
     height: 80px;
+    padding: 10px;
+}
+.social h1{
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .copyright{
 
-    font-size: 9px;
+    font-size: 8px;
     font-family: 'Courier New', Courier, monospace;
 
 }
