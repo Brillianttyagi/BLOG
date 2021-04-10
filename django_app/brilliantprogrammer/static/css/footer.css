@@ -1,4 +1,5 @@
 footer{
+    clear: both;
     height: 160px;
     background-color: rgb(22, 168, 34);
     position: relative;
@@ -33,4 +34,12 @@ footer{
     font-size: 28px;
     color: rgb(255, 0, 0);
     font-weight: 700;
+}
+
+@media screen and (max-width: 680px){
+    .copyright{
+
+        font-size: 7px;
+    
+    }
 }

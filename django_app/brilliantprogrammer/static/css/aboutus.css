@@ -66,12 +66,12 @@
 
 @media screen and (max-width: 680px){
     .block h1{
-        font-size: 20px;
+        font-size: 16px;
     }
     .quotes h1{
         font-size: 20px;
     }
     .contant h1{
-        font-size: 20px;
+        font-size: 16px;
     }
 }
