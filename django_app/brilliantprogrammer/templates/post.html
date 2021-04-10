@@ -1,0 +1,17 @@
+{% extends "nav.html" %}
+{% load static %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/post.css' %}">
+{% endblock %}
+{% block body %}
+    {{ block.super }}
+    <div class="post_block">
+        <div class="heading">
+            <h1>{{"This is the heading."}}</h1>
+        </div>
+        <div class="content">
+            {{}}
+        </div>
+    </div>
+{% endblock %}
