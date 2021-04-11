@@ -8,6 +8,7 @@
     text-align: center;
 }
 .content{
+    clear: both;
     margin: 0;
     font-family: source sans pro,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
     font-size: 1.125rem;
@@ -18,8 +19,14 @@
     background-color: #fff;
 }
 
+.information{
+    margin: 20px 0px;
+    box-sizing: border-box;
+}
+.img_ img{
+    width: 100%;
 
-
+}
 .heading2{
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
@@ -43,9 +50,13 @@ p{
     }
 }
 @media screen and (max-width: 680px) {
+    .heading{
+        font-size: 12px;
+        
+    }
     .post_block{
         font-family: 'Courier New', Courier, monospace;
-        width: 100%;
-        padding: 30px;
+        padding: 8px;
+        margin-right: 8px;
     }
 }

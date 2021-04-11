@@ -13,5 +13,6 @@ def contact(request):
 def about(request):
     return render(request,'aboutus.html')
 
-def post(request):
-    return render(request,'post.html')
+def post(request,id):
+    post  = Blog.objects.get(id = id)
+    return render(request,'post.html',{'blog':post})

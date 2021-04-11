@@ -185,7 +185,7 @@
     font-size: larger;
     padding: 20px;
 }
-a:link{
+a{
     color: black;
 }
 .blog_item{
@@ -209,7 +209,7 @@ a:link{
 }
 .img {
     clear: both;
-    width: 94%;
+    margin-right: 20px;
     padding: 10px;
     height: 120px;
     overflow: hidden;
@@ -293,9 +293,14 @@ a:link{
         margin: 0px;
 
     }
+    .heading{
+        font-size: 17px;
+        font-weight: 600;
+        padding: 10px;
+    }
     .blog_item{
         margin: 17px;
-        background-color: gray;
+        background-color: white;
         width: 90%;
         height: 230px;
         float: left;
@@ -317,6 +322,11 @@ a:link{
     #email_submit{
         width: 65%;
     }
+    .img {
+        width: 1005;
+    
+    }
+
   }
 
 

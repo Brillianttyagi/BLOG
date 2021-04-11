@@ -8,10 +8,18 @@
     {{ block.super }}
     <div class="post_block">
         <div class="heading">
-            <h1>{{"This is the heading."}}</h1>
+            <h1>{{ blog.heading }}</h1>
+        </div>
+        <div class="img_">
+            <img src="{{ blog.image.url }}" alt="image">
+        </div>
+        <div class="information">
+            <h1 class="author"><i class="fas fa-user"></i>{{ blog.author }}</h1>
+            <h1 class="upload_time"><i class="far fa-clock"></i>{{ blog.created }}</h1>
         </div>
         <div class="content">
-            {{"content"}}
+            {{ blog.body }}
         </div>
+        
     </div>
 {% endblock %}
