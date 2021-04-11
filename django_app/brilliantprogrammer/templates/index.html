@@ -15,18 +15,21 @@
         <div class="blog_container">
             <h1>Recent posts</h1>
             <div class="blog_items">
-                <div class="blog_item">
-
-                </div>
-                <div class="blog_item">
-                    
-                </div>
-                <div class="blog_item">
-                    
-                </div>
-                <div class="blog_item">
-                    
-                </div>
+                {% for i in info %}
+                <a href="blog/{{ i.id }}">
+                    <div class="blog_item">
+                        {% with i.read_time|add:" min" as time %}
+                        <span class="time">{{ time  }}</span>
+                        {% endwith %}
+                        <div class="img"><img src="{{ i.image.url }}"></div>
+                        <div class="heading">{{ i.heading }}</div>
+                        <div class="information">
+                            <div class="author"><i class="fas fa-user"></i>{{ i.author }}</div>
+                            <div class="upload_time"><i class="far fa-clock"></i>{{ i.created }}</div>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
             </div>
         </div>
     </div>
