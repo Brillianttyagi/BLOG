@@ -4,7 +4,7 @@ from django.db import models
 class Blog(models.Model):
     id = models.AutoField(primary_key=True)
     heading = models.CharField(max_length=100)
-    body = models.CharField(max_length=100000)
+    body = models.TextField(max_length=100000)
     created = models.DateTimeField(
         auto_now_add=True
     )

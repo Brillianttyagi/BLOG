@@ -3,7 +3,8 @@ from .models import Blog
 # Create your views here.
 
 def index(request):
-    return render(request,'index.html')
+    info = Blog.objects.all()
+    return render(request,'index.html',{'info':info})
 
 def contact(request):
     return render(request,'contactus.html')
