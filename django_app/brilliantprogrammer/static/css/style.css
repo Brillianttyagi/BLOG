@@ -4,6 +4,7 @@
 }
 
 .navbar{
+    z-index: 200;
     list-style: none;
     align-items: center;
     box-shadow: 1px 1px 10px black;
@@ -184,13 +185,60 @@
     font-size: larger;
     padding: 20px;
 }
-
+a:link{
+    color: black;
+}
 .blog_item{
     margin: 20px;
-    background-color: gray;
+    background-color:white;
+    box-shadow: 0px 0px 4px;
     width: 29%;
     height: 230px;
     float: left;
+    overflow: hidden;
+}
+.time{
+    background-color: green;
+    float: right;
+    color: white;
+    border: 2px solid green;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 1px 1px 8px black;
+    z-index: 100;
+
+}
+.img {
+    clear: both;
+    width: 94%;
+    padding: 10px;
+    height: 120px;
+    overflow: hidden;
+
+}
+.img img{
+    flex-shrink: 0;
+    width: 338px;
+
+}
+.heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 600;
+    padding: 10px;
+}
+.information{
+    bottom: 0;
+
+}
+.author{
+    float: left;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.upload_time{
+    float: right;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
